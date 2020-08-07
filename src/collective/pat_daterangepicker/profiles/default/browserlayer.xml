@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="collective.pat_daterangepicker"
+      interface="collective.pat_daterangepicker.interfaces.ICollectivePatDaterangepickerLayer"
+      />
+</layers>

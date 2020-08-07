@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.pat_daterangepicker">
+
+<!-- -*- extra stuff goes here -*- -->
+<records prefix="plone.resources/app-daterangepicker"
+         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+   <value key="js">++plone++collective.pat-daterangepicker/app.js</value>
+   <value key="css">
+      <element>++plone++collective.pat-daterangepicker/pat-daterangepicker-compiled.min.css</element>
+   </value>
+</records>
+<records prefix="plone.resources/pat-daterangepicker"
+         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+   <value key="js">++plone++collective.pat-daterangepicker/pat-daterangepicker.js</value>
+   <value key="css">
+     <element>++plone++collective.pat-daterangepicker/pat-daterangepicker.less</element>
+   </value>
+</records>
+<records prefix="plone.resources/pat-daterangepicker"
+         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+   <value key="js">++plone++collective.pat-daterangepicker/pat-daterangepicker.js</value>
+   <value key="css">
+     <element>++plone++collective.pat-daterangepicker/pat-daterangepicker.less</element>
+   </value>
+</records>
+<records prefix="plone.resources/daterangepicker"
+         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+   <value key="js">++plone++collective.pat-daterangepicker/daterangepicker.js</value>
+</records>
+
+<records prefix="plone.bundles/pat-daterangepicker-bundle"
+         interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+ <value key="resources">
+   <element>pat-daterangepicker</element>
+   <element>daterangepicker</element>
+ </value>
+ <value key="enabled">True</value>
+ <value key="jscompilation">++plone++collective.pat-daterangepicker/pat-daterangepicker-compiled.min.js</value>
+ <value key="csscompilation">++plone++collective.pat-daterangepicker/pat-daterangepicker-compiled.min.css</value>
+ <value key="depends">plone</value>
+  <value key="stub_js_modules">
+    <element>jquery</element>
+    <element>pat-base</element>
+    <element>pat-registry</element>
+    <element>pat-logger</element>
+    <element>pat-parser</element>
+  </value>
+</records>
+
+</registry>
