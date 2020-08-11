@@ -28,8 +28,8 @@
 collective.pat_daterangepicker
 ==============================
 
-This is not working yet!
-If you absolutely most use it today...
+This is not working for general use yet!
+If you absolutely must use it today...
 Then include the daterangepicker by using `add_resource_on_request`
 in the python class of your browserview:
 ::
