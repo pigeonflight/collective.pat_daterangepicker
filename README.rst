@@ -28,10 +28,13 @@
 collective.pat_daterangepicker
 ==============================
 
+Warning. Only Integrator friendly at the moment
+------------------------------------------------
+
 This is not working for general use yet!
 If you absolutely must use it today...
-Then include the daterangepicker by using `add_resource_on_request`
-in the python class of your browserview:
+Then I recommend creating an add-on and including the daterangepicker in your browserview by using `add_resource_on_request`
+in the python class of the browserview:
 ::
 
     from Products.CMFPlone.resources import add_resource_on_request
